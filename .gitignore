@@ -1,0 +1,9 @@
+*.o
+*.a
+*.so
+
+/build/
+
+.vscode/
+
+.DS_Store
