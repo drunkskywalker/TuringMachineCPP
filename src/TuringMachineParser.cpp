@@ -421,11 +421,7 @@ bool TuringMachineParser::p_validateRule() {
         }
         Rule r = Rule(tapes, state, destination, operations);
 
-        std::vector<Rule> list = ruleMap[state];
-
-        list.push_back(r);
-
-        ruleMap[state] = list;
+        ruleMap[state].push_back(r);
 
     }
 
